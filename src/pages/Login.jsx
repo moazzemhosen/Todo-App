@@ -33,7 +33,7 @@ export const Login = () => {
           status: "success",
           duration: 3000,
           isClosable: true,
-          position: "bottom-left",
+          position: "top",
         });
 
         // if the user is logined Successfully redirect him to the homepage
@@ -43,7 +43,7 @@ export const Login = () => {
             status: "success",
             duration: 3000,
             isClosable: true,
-            position: "bottom-left",
+            position: "bottom",
           });
           navigate(location?.state ? location.state.from.pathname: "/");
         }, 2000);
@@ -53,12 +53,12 @@ export const Login = () => {
           status: "error",
           duration: 3000,
           isClosable: true,
-          position: "bottom-left",
+          position: "bottom",
         });
       }
     });
-    console.log(loginData);
-    console.log("form Submitted");
+    // console.log(loginData);
+    // console.log("form Submitted");
   };
 
   return (

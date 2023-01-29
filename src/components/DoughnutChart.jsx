@@ -39,7 +39,7 @@ export const DoughnutChart = ({allTodo}) => {
                   font: {
                       size: 16,
                      
-                  }, color:"#fff"
+                  }, color:"black"
               }
           }
       }

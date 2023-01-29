@@ -105,7 +105,6 @@ export const CreateTodo = () => {
     setSubTask("");
   };
 
-  // const user = "sarkarsaby@gmail.com";
 
   const handleAdd = () => {
     const payload = {
@@ -122,7 +121,7 @@ export const CreateTodo = () => {
           status: "success",
           duration: 3000,
           isClosable: true,
-          position: "bottom-left",
+          position: "top",
         });
         dispatchState({type:types.RESET})
       } else {
@@ -132,7 +131,7 @@ export const CreateTodo = () => {
           status: "error",
           duration: 3000,
           isClosable: true,
-          position: "bottom-left",
+          position: "bottom",
         });
       }
     });
@@ -158,6 +157,8 @@ export const CreateTodo = () => {
         ></Button>
         Create New Todo
       </Heading>
+
+
       <Box className={styles.main}>
         {/* todo Content */}
         <Flex direction={"column"} gap={"20px"}>
@@ -341,8 +342,8 @@ export const CreateTodo = () => {
         {/* ADD Task Button */}
         <Box>
           <Button
-            bg={"#4625c0"}
-            _hover={{ background: "#6e47fa" }}
+            bg={"#25c07f"}
+            _hover={{ background: "#10dd7d" }}
             fontSize={"2xl"}
             letterSpacing={"2px"}
             width={"100%"}

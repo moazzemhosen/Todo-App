@@ -2,6 +2,6 @@ const mongoose =require( "mongoose");
 
 const connect=()=>{
 
-    return mongoose.connect("mongodb+srv://subhankar:subho0905@cluster0.zrx9z.mongodb.net/FullStack_TODO?retryWrites=true&w=majority")
+    return mongoose.connect("mongodb+srv://moazzem:moazzem@cluster0.4g7svdo.mongodb.net/Todo?retryWrites=true&w=majority")
 }
 module.exports=connect;

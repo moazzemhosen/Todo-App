@@ -33,7 +33,7 @@ export const Register = () => {
           status: "success",
           duration: 3000,
           isClosable: true,
-          position: "bottom-left",
+          position: "bottom",
         });
 
         // if the user is logined Successfully redirect him to the homepage
@@ -42,15 +42,15 @@ export const Register = () => {
         }, 2000);
       } else if (res.status === REGISTERREJECTED) {
         toast({
-          title: `${res.message} ! Please check your data & enter correctly.`,
+          title: `${res.message} ! Please check your Data & Enter correctly.`,
           status: "error",
           duration: 3000,
           isClosable: true,
-          position: "bottom-left",
+          position: "bottom",
         });
       }
     });
-    console.log("form Submitted", registerData);
+    //console.log("form Submitted", registerData);
   };
 
   return (

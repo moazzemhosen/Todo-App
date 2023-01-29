@@ -10,7 +10,7 @@ import  {store}  from "./redux/store";
 
 import axios from "axios";
 
-axios.defaults.baseURL = "https://rich-erin-moth-ring.cyclic.app";
+axios.defaults.baseURL = "http://localhost:8080";
 axios.defaults.headers.post["Content-Type"] = "application/json";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));

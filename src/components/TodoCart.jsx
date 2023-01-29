@@ -67,11 +67,11 @@ export const TodoCart = ({ data }) => {
     dispatch(updateData({ ...data, subTasks: desub })).then((res) => {
       if (res.status === UPDATEDATA_SUCCESS) {
         toast({
-          title: `Subtask Deleted Successfull ...`,
+          title: `SubTask Deleted Successfull ...`,
           status: "success",
           duration: 3000,
           isClosable: true,
-          position: "bottom-left",
+          position: "top",
         });
       } else {
         toast({
@@ -79,11 +79,11 @@ export const TodoCart = ({ data }) => {
           status: "error",
           duration: 3000,
           isClosable: true,
-          position: "bottom-left",
+          position: "bottom",
         });
       }
     });
-    console.log(" delete id", id);
+    console.log("delete id", id);
   };
 
   const handleStatus = (val) => {
@@ -104,7 +104,7 @@ export const TodoCart = ({ data }) => {
             status: "success",
             duration: 3000,
             isClosable: true,
-            position: "bottom-left",
+            position: "top",
           });
         } else {
           toast({
@@ -112,17 +112,17 @@ export const TodoCart = ({ data }) => {
             status: "error",
             duration: 3000,
             isClosable: true,
-            position: "bottom-left",
+            position: "bottom",
           });
         }
       });
     }
-    console.log(val);
+   // console.log(val);
   };
 
   // Delete Todo functionality
   const handleDelete = () => {
-    console.log("delete clicked");
+   // console.log("delete clicked");
     dispatch(deleteData(data)).then((res) => {
       if (res.status === DELETEDATA_SUCCESS) {
         toast({
@@ -130,7 +130,7 @@ export const TodoCart = ({ data }) => {
           status: "success",
           duration: 3000,
           isClosable: true,
-          position: "bottom-left",
+          position: "top",
         });
       } else {
         toast({
@@ -138,7 +138,7 @@ export const TodoCart = ({ data }) => {
           status: "error",
           duration: 3000,
           isClosable: true,
-          position: "bottom-left",
+          position: "bottom",
         });
       }
     });

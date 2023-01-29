@@ -29,7 +29,7 @@ export const Home = () => {
       status: "error",
       duration: 3000,
       isClosable: true,
-      position: "bottom-left",
+      position: "bottom",
     });
     return (
       <Heading size="md" padding={"20px"} color={"red.400"}>
@@ -42,7 +42,7 @@ export const Home = () => {
   console.log(allTodo);
   return (
     <Box padding={"20px"}>
-      <Heading size="xl"> {`Welcome to Home ${user.name}`} </Heading>
+      <Heading size="xl" color={"green"}> {`Welcome to Home ${user.name}`} </Heading>
       <Flex
         // justifyContent={"space-around"}
         height={"100%"}
@@ -82,7 +82,7 @@ export const Home = () => {
             </Button>
           </Flex>
           {allTodo.length === 0 ? (
-            <Text fontSize={"20px"}>
+            <Text fontSize={"20px"} color={"red"}>
               {" "}
               No Todos created yet!{" "}
               <Link to={"/createNew"}>
@@ -98,7 +98,7 @@ export const Home = () => {
 
         {/* Chart js */}
         <Flex direction={"column"} marginTop={"50px"}>
-          <Heading as={"h2"} size={"lg"} textAlign={"center"} marginBottom={"30px"}>Ratio of Status of Todo's </Heading>
+          <Heading as={"h2"} size={"lg"} textAlign={"center"} color={"red"} marginBottom={"30px"}>Ratio of Status of Todo's </Heading>
           <Box
             width={["250px", "400px", "600px", "600px"]}
             height={["270px", "400px", "600px", "600px"]}
