@@ -53,43 +53,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Website view
 
-## Register Page
 
-<img src="https://miro.medium.com/max/720/1*enHps6YJTGJ8ZKL1QAmTGA.webp">
 
-## Login Page
 
-<img src="https://miro.medium.com/max/720/1*shKYqqAPTFb02du_MczKZw.webp">
-
-## Home Page
-
-<img src="https://miro.medium.com/max/720/1*cIZdSYURuBChxW7Oy8mDfg.webp">
-<img src="https://miro.medium.com/max/640/1*C_-XoZCu-J8HR7DznigBHw.webp">
-
-## All Todo page
-
-<img src="https://miro.medium.com/max/720/1*dZwC_xX0ELdEiBGqRkCPEw.webp">
-<img src="https://miro.medium.com/max/640/1*RbUwgj2XvUUj_ySPzK-GFw.webp">
-
-## Official Todo Page
-
-<img src="https://miro.medium.com/max/720/1*XxzMG6k8YHmN7dEbAdqg3g.webp">
-<img src="https://miro.medium.com/max/640/1*yWLtHXsawZKN_TEUwuQJjQ.webp">
-
-## Personal Todo Page
-
-<img src="https://miro.medium.com/max/720/1*ygSdvD56inTZO7Hu6iFXqw.webp">
-<img src="https://miro.medium.com/max/640/1*lE1LMs5wR6_7dQuR9i8DSg.webp">
-
-## Others Todo Page
-
-<img src="https://miro.medium.com/max/720/1*5PMzJBpeK7wrTlxHB07sRQ.webp">
-<img src="https://miro.medium.com/max/640/1*Dlpkbd-TDro_6TqYtP6HZA.webp">
-
-## CreateNew Todo Page
-
-<img src="https://miro.medium.com/max/720/1*HjE62iTdPWaswkR6-MWriQ.webp">
-<img src="https://miro.medium.com/max/640/1*VRrYBPYL8OevXnhjzbfWYw.webp">
 
 
 ## Available Scripts
