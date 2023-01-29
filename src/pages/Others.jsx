@@ -23,7 +23,7 @@ export const Others = () => {
 
   return (
     <>
-      <Heading size="xl" padding={"20px"}>
+      <Heading size="xl" padding={"20px"} align={"center"} color={"wheat"}>
         {" "}
         {` Others Todo's `}
       </Heading>

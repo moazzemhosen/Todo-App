@@ -165,6 +165,7 @@ export const CreateTodo = () => {
           <Input
             type={"text"}
             placeholder={"Write Your todo"}
+            color={"black"}
             value={title}
             onChange={(e) =>
               dispatchState({ type: types.SET_TITLE, payload: e.target.value })
@@ -175,6 +176,7 @@ export const CreateTodo = () => {
           <Input
             type={"date"}
             value={date}
+            color={"black"}
             onChange={(e) =>
               dispatchState({ type: types.SET_DATE, payload: e.target.value })
             }
@@ -184,6 +186,7 @@ export const CreateTodo = () => {
           <Input
             type={"date"}
             value={deadline}
+            color={"black"}
             onChange={(e) =>
               dispatchState({
                 type: types.SET_DEADLINE,
@@ -194,6 +197,7 @@ export const CreateTodo = () => {
           <Textarea
             placeholder="Description"
             value={description}
+            color={"black"}
             minHeight={"120px"}
             onChange={(e) =>
               dispatchState({
@@ -210,8 +214,9 @@ export const CreateTodo = () => {
             <Input
               value={subtask}
               placeholder="Sub Task"
+              color={"black"}
               onChange={(e) => setSubTask(e.target.value)}
-            ></Input>
+            />
             <Button
               bg={"#6136fa"}
               _hover={{ background: "#6e47fa" }}
@@ -263,7 +268,7 @@ export const CreateTodo = () => {
           gap="40px"
         >
           <Box>
-            <Heading as={"h4"} size="md" marginBottom={"10px"}>
+            <Heading as={"h4"} size="md" marginBottom={"10px"} color={"gray"}>
               Status
             </Heading>
             <RadioGroup
@@ -274,40 +279,39 @@ export const CreateTodo = () => {
             >
               <Stack direction={"column"}>
                 <Radio value={"todo"} size="lg">
-                  {" "}
-                  Todo
+                  <Text color={"#f56565"}> Todo</Text>
                 </Radio>
-                <Radio value={"inprogress"} size="lg">
-                  {" "}
-                  InProgress
+                <Radio value={"inprogress"} size="lg" >
+                  <Text color={"black"}>InProgress...</Text>
+                  
                 </Radio>
                 <Radio value={"done"} size="lg">
-                  {" "}
-                  Done
+                 <Text color={"green"}> Done</Text>
+                 
                 </Radio>
               </Stack>
             </RadioGroup>
           </Box>
 
           <Box>
-            <Heading as={"h4"} size="md" marginBottom={"10px"}>
+            <Heading as={"h4"} size="md" marginBottom={"10px"} color={"gray"}>
               Tags
             </Heading>
             <Stack>
               <Checkbox
                 size="lg"
-                isChecked={Personal}
-                
+                isChecked={Personal} 
                 colorScheme="green"
                 onChange={(e) => {
                   dispatchState({
                     type: types.SET_TAGS,
                     payload: { Personal: e.target.checked },
                   });
-                  console.log("Personal", e.target.checked);
+                 // console.log("Personal", e.target.checked);
                 }}
               >
-                Personal
+                <Text>Personal</Text>
+               
               </Checkbox>
               <Checkbox
                 size="lg"
@@ -320,7 +324,8 @@ export const CreateTodo = () => {
                   });
                 }}
               >
-                Official
+                <Text> Official</Text>
+               
               </Checkbox>
               <Checkbox
                 size="lg"
@@ -333,21 +338,23 @@ export const CreateTodo = () => {
                   });
                 }}
               >
-                Others
+                <Text> Others</Text>
+               
               </Checkbox>
             </Stack>
           </Box>
         </Flex>
 
         {/* ADD Task Button */}
-        <Box>
+        <Box  width={"100%"}
+            height={["10%","10%","10%","100%"]}>
           <Button
             bg={"#25c07f"}
             _hover={{ background: "#10dd7d" }}
             fontSize={"2xl"}
             letterSpacing={"2px"}
             width={"100%"}
-            height={"100%"}
+            height={["10%","10%","10%","100%"]}
             padding={"50px"}
             onClick={handleAdd}
           >

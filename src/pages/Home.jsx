@@ -53,7 +53,7 @@ export const Home = () => {
           direction={"column"}
           gap={"20px"}
           paddingTop={"50px"}
-          width={"40%"}
+          width={["100%","40%","40%"]}
           height={"100%"}
         >
           <Flex width={"230px"} justifyContent={"space-between"}>

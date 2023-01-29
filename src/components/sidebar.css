@@ -9,10 +9,12 @@
 #Profilepic{
   height: 40px;
   width: 50px;
-  border-radius: 10px;
+  border-radius: 8px;
 }
 #username{
   margin-top: -16px;
+  color: white;
+  font-weight: bold;
 }
 #collapsedBtn{
     font-size: 20px;
@@ -39,7 +41,7 @@
 
 #sidebar .pro-sidebar-inner .pro-sidebar-layout ul .pro-inner-item .pro-icon-wrapper {
   background-color: #6136fa;
-  color: #000;
+  color: rgb(246, 239, 239);
   border-radius: 3px;
 } 
 

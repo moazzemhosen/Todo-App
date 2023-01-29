@@ -23,9 +23,8 @@ export const All = () => {
 
   return (
     <>
-      <Heading size="xl" padding={"20px"}>
-        {" "}
-        {`All Todo's are here`}
+      <Heading size="xl" padding={"20px"} align={"center"} color={"black"}>
+        {`All Todo's are Here`}
       </Heading>
       <div className="displayData">
         {allTodo.length === 0 ? (

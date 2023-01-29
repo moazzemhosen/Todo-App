@@ -22,7 +22,7 @@ export const Official = () => {
 
   return (
     <>
-      <Heading size="xl" padding={"20px"}>
+      <Heading size="xl" padding={"20px"} align={"center"} color={"gray"}>
         {" "}
         {` Official Todo's `}
       </Heading>

@@ -45,7 +45,7 @@
   .form {
     position: absolute;
     inset: 2px;
-    background: #23242a;
+    background:white;
     z-index: 2;
     border-radius: 8px;
     padding: 50px 40px;
@@ -83,14 +83,14 @@
       padding: 20px 10px 10px;
       pointer-events: none;
       font-size:  1em;
-      color:white;
+      color:black;
       letter-spacing: 0.05em;
       transition: 0.5s;
   }
   
   .inputbox input:valid ~span,
   .inputbox input:focus ~span{
-      color: yellow;
+      color: green;
       transform: translateX(0px) translateY(-34px);
       font-size: 0.75em;
   }

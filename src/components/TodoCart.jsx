@@ -156,17 +156,17 @@ export const TodoCart = ({ data }) => {
       </Modal>
 
       <Box
-        background={"#3c2981"}
+        background={"#297781"}
         width={["260px", "350px", "350px"]}
         padding={"20px"}
         borderRadius={"8px"}
       >
-        <Text fontSize={"27px"} noOfLines={2} margin={0} padding={0}>
-          {data.title}{" "}
+        <Text fontSize={"27px"} noOfLines={2} margin={0} padding={0} fontWeight={"bold"} align={"center"}>
+          {data.title}
         </Text>
         <Text fontSize={["15px", "15px", "20px"]}>
           {" "}
-          Created on :- {data.date}
+          Created At :- {data.date}
         </Text>
         <Text fontSize={["15px", "15px", "20px"]}>
           {" "}
@@ -199,7 +199,7 @@ export const TodoCart = ({ data }) => {
                 ? "red.400"
                 : data.status === "inprogress"
                 ? "yellow.400"
-                : "green.600"
+                : "green.900"
             }
           >
             {" Task is on "}

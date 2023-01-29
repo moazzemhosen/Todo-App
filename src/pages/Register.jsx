@@ -104,7 +104,7 @@ export const Register = () => {
                 <span>Password</span>
                 <i></i>
               </div>
-              <Button variant={"ghost"} _active={{background:"local"}} _hover={{background:"local"} } paddingTop={"20px"} onClick={handleShowPassword} >
+              <Button variant={"ghost"} _active={{background:"#3182ce"}} _hover={{background:"blue.700"} } paddingTop={"20px"} onClick={handleShowPassword} >
                 {
                   showPassword ? <ImEyeBlocked fontSize={"30px"}/>:<ImEye fontSize={"30px"} />
                 }

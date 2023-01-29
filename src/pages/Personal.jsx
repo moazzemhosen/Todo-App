@@ -23,7 +23,7 @@ export const Personal = () => {
 
   return (
     <>
-      <Heading size="xl" padding={"20px"}>
+      <Heading size="xl" padding={"20px"} align={"center"} color={"pink"}>
         {" "}
         {` Personal Todo's `}
       </Heading>
