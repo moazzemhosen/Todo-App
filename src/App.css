@@ -1,0 +1,28 @@
+.App {
+  /* text-align: center; */
+   background-color: #282c34;
+   height: 100vh;
+   color: aliceblue;
+   display: flex;
+   /* justify-content: space-between */
+}
+.body{
+  padding: 0 5px;
+  overflow: auto;
+  width: 100%;
+  
+}
+
+.displayData{
+ display: grid;
+ grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+ gap: 20px;
+ padding: 20px;
+ padding-top: 0px;
+}
+
+@media only screen and (max-width:400px) {
+  .displayData{
+    padding: 0px;
+  }
+}
